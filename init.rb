@@ -1,3 +1,5 @@
+require_dependency 'redmine_all_users_custom_field_patch'
+
 Redmine::Plugin.register :redmine_all_users_custom_field do
   name 'Redmine All Users Custom Field plugin'
   author 'Author name'
