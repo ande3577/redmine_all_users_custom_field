@@ -31,4 +31,10 @@ class CustomFieldTest < ActiveSupport::TestCase
     assert @custom_field.possible_values_options(@project).collect(&:last).include?(@non_member.id.to_s)
   end
   
+  def test_set_all_users_project_setting_to_true
+    @project.custom_fields_show_all_users = true
+    @project.save
+    assert @custom_field.possible_values_options(@project).collect(&:last).include?(@non_member.id.to_s)
+  end
+  
 end
