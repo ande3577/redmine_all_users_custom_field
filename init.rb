@@ -9,9 +9,9 @@ Redmine::Plugin.register :redmine_all_users_custom_field do
   end
   
   name 'Redmine All Users Custom Field plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
+  author 'David S Anderson'
+  description 'A plugin that allows showing all users in a user type custom field'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'https://github.com/ande3577/redmine_all_users_custom_field'
+  author_url 'https://github.com/ande3577/'
 end
